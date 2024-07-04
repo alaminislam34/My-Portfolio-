@@ -1,0 +1,169 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url(/image/background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+
+nav .logo:hover{
+    transform: scale(1.2);
+}
+
+.logo{
+    width: 190px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #c51298;
+    text-align: center;
+    margin: 0%;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+img{
+    border: #fff;
+    /* border-bottom-right-radius:50%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-top-left-radius: 10%; */
+    height: 250px;
+    border: 10px solid #fff;
+    border-radius: 10px 10px 100px 10px;
+}
+
+.page{
+    margin: 60px 800px auto 100px;
+}
+
+.text{
+    margin: 20px auto auto 100px;
+    color: #fff;
+}
+
+nav ul{
+    list-style: none;
+    text-align: right;
+    width: 100%;
+    padding-right: 60px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* This is a blog */
+
+.header{
+    font-size: 50px;
+    text-align: center;
+    margin: 50px auto;
+    color: tomato;
+    text-decoration: underline;
+}
+h2{
+    text-align: center;
+    margin: 15px;
+    background-color: rgb(22, 109, 116);
+}
+.box p{
+    background-color: rgb(22, 109, 116);
+    padding: 0%;
+}
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    /* color: rgb(22, 109, 116); */
+    /* background-color: black; */
+    
+}
+.blog div{
+    height: 370px;
+    width: 335px;
+    margin: 40px;
+    border-top: 25px solid rgb(242, 57, 248);
+    /* border-top: 20px red; */
+    /* border-bottom: 20px black; */
+    text-align: justify;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgb(125, 164, 248);
+}
+.box:hover{
+    transform: scale(1.1);
+}
+.blog p{
+    padding: 20px;
+    font-size: 18px;
+
+}
+.box{
+    background-color: rgb(22, 109, 116);
+    height: 80px;
+}
+
+.contact{
+    margin: 30px auto;
+}
+.page h1{
+    color: #fff;
+    font-style: var(--color);
+}
+.blog .box{
+    margin: 20px auto ;
+}
+/* .btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: rgb(174, 174, 236);
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    /* margin-right: 50px; */
+
+
+/* .contact i{
+    margin-left: 20px;
+    font-size: 30px;
+    align-items: center;
+    margin: 20px 10px;
+    margin-top: 30px;
+} */
+
+.button-grounp{
+    margin: 60px 800px auto 100px;
+    margin-left: 200px;
+}
+ion-icon{
+    margin: 5px;
+    margin-top: 20px;
+    font-size: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+li:hover{
+    transform: scale( 1.1);
+}
