@@ -19,7 +19,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    background: tomato;
+    
     text-align: right;
 }
 .navbar li{
@@ -38,10 +38,8 @@
     
 }
 .navbar a:hover{
-    background-color: #6b6666;
-    color:light #fff;
+    color: #da3c3c;
 }
-
 
 
 
@@ -69,6 +67,12 @@ img{
     margin: 20px auto auto 100px;
     color: #fff;
 }
+.text p{
+    margin: 10px 800px 20px 0;
+    letter-spacing: .5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    word-spacing: 2px;
+}
 
 nav ul{
     list-style: none;
@@ -94,10 +98,9 @@ nav ul li a{
     color: tomato;
     text-decoration: underline;
 }
-h2{
-    text-align: center;
-    margin: 15px;
-    background-color: rgb(22, 109, 116);
+.logo{
+    text-align: left;
+    color: #da3c3c;
 }
 .box p{
     background-color: rgb(22, 109, 116);
@@ -181,3 +184,6 @@ ion-icon{
 li:hover{
     transform: scale( 1.1);
 }
+
+/* form style */
+
