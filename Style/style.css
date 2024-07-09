@@ -16,6 +16,9 @@
 }
 
 /* navigation styles */
+header{
+    max-height: 852px;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -53,7 +56,7 @@ nav ul li a{
 }
 .nav-title a:hover{
     color: greenyellow;
-    text-shadow:0 0 50px #aafa5f,0 0 50px #aafa5f;
+    text-shadow:0 0 30px #aafa5f;
     transform: scale(1.2);
 }
 /* icon styles */
@@ -81,6 +84,7 @@ nav ul li a{
 /* images styles */
 
 .myself{
+    max-height: 727px;
     display: flex;
     gap: 100px;
     text-align: center;
