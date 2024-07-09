@@ -91,12 +91,17 @@ nav ul li a{
     text-align: left;
     margin-left: 150px;
 }
+
+.header-title h3{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
 .header-title .myname{
     color: #70f821;
     font-size: 72px;
 }
 #Name{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .myself img{
     height: 380px;
@@ -107,6 +112,7 @@ nav ul li a{
     background-color: black;
     border: 6px solid #61ebfd;
     box-shadow: 0 0 20px #61ebfd;
+    margin-bottom: 25px;
 }
 
 .myimage img{
