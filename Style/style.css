@@ -53,18 +53,77 @@ nav ul li a{
 }
 .nav-title a:hover{
     color: greenyellow;
-    text-shadow:0 0 30px #aafa5f,0 0 30px #aafa5f;
+    text-shadow:0 0 50px #aafa5f,0 0 50px #aafa5f;
     transform: scale(1.2);
+}
+/* icon styles */
+.icon-content .icon{
+    font-size: 25px;
+}
+#icon1 i:hover{
+    background: rgb(240, 66, 95);
+    border-radius: 5px;
+}
+#icon2 i:hover{
+    background: #042aff;
+    border-radius: 5px;
+}
+#icon3 i:hover{
+    background: rgb(0, 109, 252);
+    border-radius: 5px;
+}
+.icon-content{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
 }
 
 /* images styles */
 
-.image{
-    text-align: right;
-    margin: 80px 150px 0px 0px;
+.myself{
+    display: flex;
+    gap: 100px;
+    text-align: center;
+    margin: 60px 150px 0px 0px;
 }
-.image img{
-    height: 450px;
-    border: 5px solid white;
+
+.header-title{
+    text-align: left;
+    margin-left: 150px;
+}
+.header-title .myname{
+    color: #70f821;
+    font-size: 72px;
+}
+#Name{
+    margin-bottom: 30px;
+}
+.myself img{
+    height: 380px;
+    border: 5px solid rgb(132, 247, 55);
     border-radius: 50%;
 }
+.myimage{
+    background-color: black;
+    border: 6px solid #61ebfd;
+    box-shadow: 0 0 20px #61ebfd;
+}
+
+.myimage img{
+    align-items: center;
+    margin: 30px;
+    height: 380px;
+    width: 380px;
+}
+.myself .myimage{
+    border-radius: 50%;
+}
+
+.header-title .title-description{
+    letter-spacing: 2px;
+    line-height:25px;
+    margin-top: 20px;
+}
+ 
+/* main styles */
+
