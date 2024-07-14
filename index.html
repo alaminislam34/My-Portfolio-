@@ -4,64 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Style/style.css">
-    <!-- Icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="./image/download (1).jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Style/style.css">
 </head>
 <body>
     <header>
-        <nav class="navigation-bar">
-            <a class="nav-icon" href=""><h1><span class="primary-color">A</span>l <span class="primary-color">A</span>min</h1></a>
-            <ul>
-                <li class="nav-title"><a href="">Home</a></li>
-                <li class="nav-title"><a href="">Projects</a></li>
-                <li class="nav-title"><a href="">Contact</a></li>
-                <li class="nav-button"><button>Hire me</button></li>
-                <li class="nav-toggle">
-                    <input type="checkbox" id="dark-mode-toggle">
-                    <label for="dark-mode-toggle">Dark Mode</label>
-                </li>
+        <nav>
+            <img src="./image/logo.png" alt="logo">
+            <ul class="navbar">
+                <div class="nav-title">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                </div>
+                <div class="btn">
+                    <button class="button" type="button">Hire me</button>
+                </div>
             </ul>
         </nav>
-        <div class="myself">
-            <div class="header-title">
-                <h3>Web Developer</h3>
-                <h1 class="myname">Hello, </h1>
-                <h1 class="myname">I'm</h1>
-                <h1 class="myname" id="Name">Al Amin Islam</h1>
-                <h4>About me..</h4>
-                <p class="title-description">I'm a student though I'm studying textile engineering, but coding is something I enjoy a lot. So I want to know more about it.</p>
-                <div class="icon-content">
-                    <a href="https://www.instagram.com/mdalaminislam0412/" class="icon" id="icon1">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/ar.alamin34" class="icon" id="icon2">
-                        <i class="fa-brands fa-square-facebook"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/md-al-amin-islam-b2100b261/" class="icon" id="icon3">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://x.com/MDAlAmin0412" class="icon" id="icon4">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
+    </header>
+    <main>
+        <section class="homepage">
+            <div class="home-container">
+                <div class="content1">
+                    <h3>Hello, I'm</h3>
+                    <h1> Al Amin Islam</h1>
+                    <p>I'm a student though I'm studying textile engineering, but coding is something I enjoy a lot. So I want to know more about it.</p>
+
+                    <ul class="contact">
+                        <li><a href="https://www.facebook.com/profile.php?id=61562355332943"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/mdalaminislam0412/"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="https://github.com/alaminislam34/"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/md-al-amin-islam-b2100b261/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="content2">
+                    <img src="./image/profile.png" alt="">
                 </div>
             </div>
-            <div class="myimage">
-                <img src="./image/file (1).png" alt="">
+        </section>
+        <section class="banner-1">
+            <h1>What I do</h1>
+            <p>I have more than 1 years experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies i use. Want to find out more about my experience? Check out my online resume and project portfolio.</p>
+            <div class="card-container">
+                <div class="card1">
+                    <img src="./image/html.png" alt="HTML">
+                    <h3>HTML</h3>
+                    <p>HTML is the standard markup language for creating Web pages.HTML stands for Hyper Text Markup Language, HTML is the standard markup language.</p>
+                    <a href="https://www.w3schools.com/html/">Learn more.</a>
+                </div>
+                <div class="card2">
+                    <img src="./image/css.png" alt="CSS">
+                    <h3>CSS</h3>
+                    <p>CSS is the language we use to style a Web page. CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed.</p>
+                    <a href="https://www.w3schools.com/css/">Learn more</a>
+                </div>
+                <div class="card3">
+                    <img src="./image/js.png" alt="JS">
+                    <h3>JavaScript</h3>
+                    <p>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much ...</p>
+                    <a href="https://www.w3schools.com/js/default.asp">Learn more</a>
+                </div>
             </div>
-        </div>
-    </header>
-
-    <script>
-        const toggleSwitch = document.querySelector('#dark-mode-toggle');
-        toggleSwitch.addEventListener('change', () => {
-            document.body.classList.toggle('dark-mode');
-        });
-    </script>
+        </section>
+        <section class="banner-2">
+            <h2>A summary of My Resume</h2>
+            <div class="resume">
+                <div class="resume1">
+                    <h3>My Education</h3>
+                    <h4>Primary label</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, delectus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, odit.</p>
+                    <hr>
+                    <h4>High School label</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt velit perferendis saepe culpa. Doloremque ullam quo atque blanditiis quaerat!</p>
+                    <hr>
+                    <h4>Diploma in Engineering</h4>
+                    <p>Mirpur Institute of Science and Technology. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos suscipit modi dicta incidunt voluptatum. Dolor.</p>
+                </div>
+                <div class="resume2"> 
+                    <h3>My Experience</h3>
+                    <h4>Computer Training</h4>
+                    <p>Uttorer Alo Computer Training Center. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut nesciunt ipsum recusandae porro. Debitis unde ala adfl.</p>
+                    <hr>
+                    <h4>Web Development</h4>
+                    <p>Programming hero Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est labore modi ipsum laudantium id atque molestiae optio saepe.</p>
+                    <hr>
+                    <h4>IT support</h4>
+                    <p>Mirpur Institute of Science and Technology. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam alias dolorum voluptatum labore aut.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

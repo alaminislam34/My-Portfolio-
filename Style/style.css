@@ -1,130 +1,321 @@
-/* Define CSS variables for light and dark themes */
-:root {
-    --primary-color: #0d6efd;
-    --background-color: #ffffff;
-    --text-color: #000000;
-    --link-color: #0d6efd;
-    --button-bg: #0d6efd;
-    --button-text: #ffffff;
-    --nav-bg: #f8f9fa;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body.dark-mode {
-    --primary-color: #0d6efd;
-    --background-color: #121212;
-    --text-color: #ffffff;
-    --link-color: #0d6efd;
-    --button-bg: #0d6efd;
-    --button-text: #ffffff;
-    --nav-bg: #333333;
-}
-
-/* Global Styles */
-body {
-    font-family: 'Outfit', sans-serif;
+*{
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
+    box-sizing: border-box;
+    /* font-family: "poppins" sans-serif; */
 }
 
-header {
-    background-color: var(--nav-bg);
-    padding: 10px 20px;
+body
+{
+    font-family: 'poppins';
+    /* color: #ededed; */
+    background-color: #081b28;
+    color: #ffffff;
+}
+/* header styles */
+
+header .namelogo{
+    font-size: 40px;
+    font-weight: bolder;
 }
 
-.navigation-bar {
+header nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 30px 100px;
 }
-
-.nav-icon h1 {
-    margin: 0;
-    color: var(--primary-color);
-}
-
-ul {
+nav ul{
     list-style: none;
     display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-title a, .nav-button button, .nav-toggle label {
-    color: var(--text-color);
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-.nav-button button {
-    background-color: var(--button-bg);
-    color: var(--button-text);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.nav-toggle {
-    display: flex;
-    align-items: center;
-}
-
-.nav-toggle input {
-    margin-right: 10px;
-}
-
-.myself {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 40px;
     text-align: center;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+    height: 80px;
+}
+.navbar .nav-title{
+    display: flex;
+    gap: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+}
+ul li a:hover{
+    color: #0ef;
+    
+}
+.contact a i:hover{
+    box-shadow: 0 0 10px;
+}
+
+nav .btn{
+    height: 65px;
+    width: 165px;
+    margin: 0 50px;
+    border-radius: 20px;
+    background: linear-gradient(#25423f, #3f3d2a, #3a2e38);
+}
+.btn button{
+    background-color: #081b28;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    margin-top: 5px;
+    height: 55px;
+    width: 155px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0 0 10px;
+}
+.btn button:hover{
+    color: #0ef;
+}
+
+/* main styles */
+
+.home-container{
+    display: flex;
+    gap: 150px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+.content1, .content2{
+    width: 50%;
+    height: 100%;
+}
+.content1 h3, h1{
+    padding-bottom: 20px;
+}
+.content1 h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #0ef;
+}
+.content1 h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+.contact{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.content2 img{
+    width: 400px;
+    height: auto;
+    border: 5px solid #0ef;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 50px;
+}
+/* banner 1 styles */
+
+.banner-1{
+    text-align: center;
+    padding: 30px 50px;
+    margin: 100px 40px;
+}
+.banner-1 h1{
+    font-size: 40px;
+    font-weight: bold;
     padding: 20px;
 }
-
-.header-title {
-    margin-bottom: 20px;
-}
-
-.myimage img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-.icon-content {
+.card-container{
     display: flex;
+    gap: 60px;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
+    margin-top: 25px;
+}
+.card1, .card2, .card3, .card4{
+    border: 3px solid #f02eaa66;
+    border-radius: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    padding: 20px;
+}
+.card-container a{
+    text-decoration: underline;
+    color: #ffffff;
+    padding: 10px;
     margin-top: 10px;
 }
 
-.icon {
-    color: var(--link-color);
-    font-size: 24px;
-    transition: color 0.3s;
+/* resume styles */
+.banner-2{
+    text-align: center;
+    margin: 100px 20px;
+}
+.banner-2 h2{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 2px;
 }
 
-.icon:hover {
-    color: var(--primary-color);
+.resume{
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+.resume h3{
+    font-size: 30px;
+    padding: 20px;
+}
+.resume1, .resume2{
+    padding: 20px;
+    text-align: center;
+}
+.resume1 h4, p{
+    padding-bottom: 10px;
+}
+.resume2 h4, p{
+    padding-bottom: 10px;
 }
 
-/* Responsive Styles */
-@media (min-width: 768px) {
-    .myself {
-        flex-direction: row;
+
+
+
+
+@media screen and (max-width: 576px) {
+    .home-container{
+        flex-direction: column;
+        padding: 0px;
+        width: 100%;
         text-align: left;
     }
-
-    .header-title {
-        flex: 1;
-        margin-right: 20px;
+    header nav{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .navbar{
+        padding: 10px 10px 20px 10px;
+    }
+    nav ul{
+        gap: 10px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar .nav-title{
+        gap: 15px;
+        padding: 15px 0;
+        width: 100%;
+    }
+    .banner-1{
+        padding: 0;
+    }
+    .banner-2{
+        padding: 0;
+    }
+    .nav-title li a{
+        padding: 8px;
+        font-size: 20px;
+    }
+    .content1, .content2{
+        width: 80%;
+    }
+    .content2{
+        margin-top: 30px;
+    }
+    .content2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .home-container{
+        gap: 20px;
+    }
+    .content1 h3{
+        padding-bottom: 5px;
+    }
+    .content1, .content2{
+        /* width: 70%; */
+        height: 100%;
+        text-align: left;
+        justify-content: start;
     }
 
-    .myimage {
-        flex: 1;
+    /* card-container responsive 576px max width */
+
+    .card-container h3, p {
+        padding-bottom: 10px;
+    }
+    .card-container{
+        flex-direction: column;
+        text-align: left;
+    }
+    .resume{
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+
+}
+@media screen and (min-width: 576px) and (max-width: 990px) {
+    .home-container{
+        flex-direction: column;
+        padding: 30px;
+        gap: 50px;
+    }
+    header nav{
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 10px;
+        font-size: 20px;
+        padding: 30px;
+    }
+    .navbar{
+        gap: 0px;
+        padding-right: 0;
+        font-size: 10px;
+    }
+    .nav-title{
+        width: 70%;
+        padding: 10px 20px;
+        text-align: right;
+    }
+    s
+    nav img{
+        width: 80px;
+        height: 60px;
+    }
+    .navbar .nav-title{
+        gap: 30px;
+        font-size: 28px;
+    }
+    .btn{
+        width: 180px;
+    }
+    /* .btn button{
+        width: 130px;
+    } */
+    .content1, .content2{
+        width: 100%;
+    }
+    .content2{
+        text-align: center;
+        align-items: center;
+    }
+
+    /* card-container max-width 990px */
+    .card-container{
+        flex-direction: column;
+        text-align: left;
+    }
+    .card-container h3, p{
+        padding-bottom: 10px;
     }
 }
