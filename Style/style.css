@@ -1,139 +1,130 @@
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* Define CSS variables for light and dark themes */
+:root {
+    --primary-color: #0d6efd;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #0d6efd;
+    --button-bg: #0d6efd;
+    --button-text: #ffffff;
+    --nav-bg: #f8f9fa;
+}
 
-*{
+body.dark-mode {
+    --primary-color: #0d6efd;
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --link-color: #0d6efd;
+    --button-bg: #0d6efd;
+    --button-text: #ffffff;
+    --nav-bg: #333333;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Outfit', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Outfit", sans-serif;
-    background-color: black;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Shared Styles */
-.primary-color{
-    color: #ff0000;
+header {
+    background-color: var(--nav-bg);
+    padding: 10px 20px;
 }
 
-/* navigation styles */
-header{
-    max-height: 852px;
-}
-nav{
+.navigation-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 100px;
 }
-nav .nav-icon{
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 5px;
+
+.nav-icon h1 {
+    margin: 0;
+    color: var(--primary-color);
 }
-.nav-title{
-    display: inline;
-    justify-content: space-between;
-    padding-right: 50px;
-}
-nav ul{
-    display: flex;
-    align-items: center;
+
+ul {
     list-style: none;
-    font-size: 28px;
-}
-nav ul li a{
-    text-decoration: none;
-}
-.nav-button button{
-    border: 5px solid #98fd00;
-    padding: 15px 30px;
-    font-size: 20px;
-    font-weight: bold;
-}
-.nav-button button:hover{
-    background-color: #70f821;
-}
-.nav-title a:hover{
-    color: greenyellow;
-    text-shadow:0 0 30px #aafa5f;
-    transform: scale(1.2);
-}
-/* icon styles */
-.icon-content .icon{
-    font-size: 25px;
-}
-#icon1 i:hover{
-    background: rgb(240, 66, 95);
-    border-radius: 5px;
-}
-#icon2 i:hover{
-    background: #042aff;
-    border-radius: 5px;
-}
-#icon3 i:hover{
-    background: rgb(0, 109, 252);
-    border-radius: 5px;
-}
-.icon-content{
-    margin-top: 10px;
     display: flex;
-    gap: 15px;
-}
-
-/* images styles */
-
-.myself{
-    max-height: 727px;
-    display: flex;
-    gap: 100px;
-    text-align: center;
-    margin: 60px 150px 0px 0px;
-}
-
-.header-title{
-    text-align: left;
-    margin-left: 150px;
-}
-
-.header-title h3{
-    font-size: 20px;
-    letter-spacing: 3px;
-}
-.header-title .myname{
-    color: #70f821;
-    font-size: 72px;
-}
-#Name{
-    margin-bottom: 15px;
-}
-.myself img{
-    height: 380px;
-    border: 5px solid rgb(132, 247, 55);
-    border-radius: 50%;
-}
-.myimage{
-    background-color: black;
-    border: 6px solid #61ebfd;
-    box-shadow: 0 0 20px #61ebfd;
-    margin-bottom: 25px;
-}
-
-.myimage img{
     align-items: center;
-    margin: 30px;
-    height: 380px;
-    width: 380px;
+    margin: 0;
+    padding: 0;
 }
-.myself .myimage{
+
+.nav-title a, .nav-button button, .nav-toggle label {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-button button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle input {
+    margin-right: 10px;
+}
+
+.myself {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-title {
+    margin-bottom: 20px;
+}
+
+.myimage img {
+    max-width: 100%;
+    height: auto;
     border-radius: 50%;
 }
 
-.header-title .title-description{
-    letter-spacing: 2px;
-    line-height:25px;
-    margin-top: 20px;
+.icon-content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
 }
- 
-/* main styles */
 
+.icon {
+    color: var(--link-color);
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .myself {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .header-title {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .myimage {
+        flex: 1;
+    }
+}
