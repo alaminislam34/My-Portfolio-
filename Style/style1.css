@@ -60,7 +60,7 @@ nav .btn{
     width: 165px;
     margin: 0 50px;
     border-radius: 20px;
-    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    background: linear-gradient(#25423f, #3f3d2a, #3a2e38);
 }
 .btn button{
     background-color: #081b28;
@@ -76,6 +76,9 @@ nav .btn{
 }
 .btn:hover{
     box-shadow: 0 0 10px;
+}
+.btn button:hover{
+    color: #0ef;
 }
 
 /* main styles */
@@ -93,6 +96,11 @@ nav .btn{
 }
 .content1 h3, h1{
     padding-bottom: 20px;
+}
+.content1 h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #0ef;
 }
 .content1 h3{
     font-size: 30px;
@@ -113,6 +121,70 @@ nav .btn{
     padding: 10px;
     box-shadow: 0 0 50px;
 }
+/* banner 1 styles */
+
+.banner-1{
+    text-align: center;
+    padding: 30px 50px;
+    margin: 100px 40px;
+}
+.banner-1 h1{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+}
+.card-container{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.card1, .card2, .card3, .card4{
+    border: 3px solid #f02eaa66;
+    border-radius: 10px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    padding: 20px;
+}
+.card-container a{
+    text-decoration: underline;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* resume styles */
+.banner-2{
+    text-align: center;
+    margin: 100px 20px;
+}
+.banner-2 h2{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.resume{
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+.resume h3{
+    font-size: 30px;
+    padding: 20px;
+}
+.resume1, .resume2{
+    padding: 20px;
+    text-align: center;
+}
+.resume1 h4, p{
+    padding-bottom: 10px;
+}
+.resume2 h4, p{
+    padding-bottom: 10px;
+}
+
 
 
 
@@ -143,12 +215,21 @@ nav .btn{
         padding: 15px 0;
         width: 100%;
     }
+    .banner-1{
+        padding: 0;
+    }
+    .banner-2{
+        padding: 0;
+    }
     .nav-title li a{
         padding: 8px;
         font-size: 20px;
     }
     .content1, .content2{
         width: 80%;
+    }
+    .content2{
+        margin-top: 30px;
     }
     .content2 img{
         width: 100%;
@@ -166,6 +247,22 @@ nav .btn{
         text-align: left;
         justify-content: start;
     }
+
+    /* card-container responsive 576px max width */
+
+    .card-container h3, p {
+        padding-bottom: 10px;
+    }
+    .card-container{
+        flex-direction: column;
+        text-align: left;
+    }
+    .resume{
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+
 }
 @media screen and (min-width: 576px) and (max-width: 990px) {
     .home-container{
@@ -211,5 +308,14 @@ nav .btn{
     .content2{
         text-align: center;
         align-items: center;
+    }
+
+    /* card-container max-width 990px */
+    .card-container{
+        flex-direction: column;
+        text-align: left;
+    }
+    .card-container h3, p{
+        padding-bottom: 10px;
     }
 }
