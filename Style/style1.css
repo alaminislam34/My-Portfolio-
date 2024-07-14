@@ -7,10 +7,15 @@
     /* font-family: "poppins" sans-serif; */
 }
 
-body{
+body
+{
     font-family: 'poppins';
+    /* color: #ededed; */
+    background-color: #081b28;
+    color: #ffffff;
 }
 /* header styles */
+
 header .namelogo{
     font-size: 40px;
     font-weight: bolder;
@@ -36,14 +41,33 @@ nav ul li a{
     text-decoration: none;
     font-size: 28px;
     font-weight: bold;
-    color: black;
-}
-nav .button{
-    padding: 10px;
-    font-size: 25px;
-    font-weight: 600;
-    background-color: green;
     color: #ffffff;
+}
+ul li a:hover{
+    color: #0ef;
+}
+
+nav .btn{
+    height: 65px;
+    width: 165px;
+    margin: 0 50px;
+    border-radius: 20px;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+}
+.btn button{
+    background-color: #081b28;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    margin-top: 5px;
+    height: 55px;
+    width: 155px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0 0 10px;
 }
 
 /* main styles */
@@ -54,7 +78,6 @@ nav .button{
     justify-content: space-between;
     align-items: center;
     padding: 20px 100px;
-    
 }
 .content1, .content2{
     width: 50%;
@@ -74,9 +97,10 @@ nav .button{
 .content2 img{
     width: 400px;
     height: auto;
-    border: 5px solid gray;
+    border: 5px solid #0ef;
     border-radius: 50%;
     padding: 10px;
+    box-shadow: 0 0 50px;
 }
 
 
@@ -108,9 +132,6 @@ nav .button{
         padding: 15px 0;
         width: 100%;
     }
-    .nav-title li{
-        background-color: gainsboro;
-    }
     .nav-title li a{
         padding: 8px;
         font-size: 20px;
@@ -130,5 +151,31 @@ nav .button{
         height: 100%;
         text-align: left;
         justify-content: start;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 990px) {
+    .home-container{
+        flex-direction: column;
+        padding: 10px;
+        gap: 50px;
+    }
+    header nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        padding: 30px;
+    }
+    .navbar{
+        gap: 10px;
+        padding-right: 0;
+    }
+    nav h1{
+        font-size: 29px;
+        display: none;
+    }
+    .navbar .nav-title{
+        gap: 30px;
+        font-size: 28px;
     }
 }
