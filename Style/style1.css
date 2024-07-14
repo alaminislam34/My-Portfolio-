@@ -94,7 +94,13 @@ nav .btn{
     font-size: 30px;
     font-weight: bold;
 }
-
+.contact{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    margin-top: 10px;
+}
 .content2 img{
     width: 400px;
     height: auto;
@@ -180,9 +186,7 @@ nav .btn{
         padding: 10px 20px;
         text-align: right;
     }
-    .btn{
-        /* width: 30%; */
-    }
+    s
     nav img{
         width: 80px;
         height: 60px;
